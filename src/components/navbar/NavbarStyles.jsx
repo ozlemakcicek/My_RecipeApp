@@ -1,5 +1,20 @@
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
+//! Styled Components icin iki yol var
+//! 1-esc ile hangi elementi olusturacaksan basharfini yazarak yapablrz.direkt butondan, div den, nav dan turetme.styled.nav gibi mesela
+//! 2- olusturulmus bir styled componentten turetme. Yanci diyoruz buna. styled(Nav) seklinde
+
+
+//*  yanci veya direkt uretmeyi ayni dosya icine de yazabiliriz. direkt z.B. div den uretme yapinca;
+
+//* const Divs= styled.div` 
+
+
+//*  `
+
+//* export default DivS olur
+//? ve bu export default icine de yanciyi yazabiliriz.Onu da;
+//? export const LinkS= styled(Divs) seklinde
 
 // Navbardaki yonlendirmelieri cogunlukla Link ile asagidaki yonlendirmeleri de navigate ile yapariz
 
@@ -77,7 +92,7 @@ export const Menu = styled.div`
 `;
 
 
-// direkt Link ten turetilmis.yanci degil yani.o yuzden Linki de yukarida import etmeliyiz react-router dom dan
+// daha once olusturulan Link ten turetilmis.yanci yani.o yuzden Linki de yukarida import etmeliyiz react-router dom dan
 export const MenuLink = styled(Link)`
   /* navbardaki 3 kelime. tek tek about vs yazanlarin ozellikleri YESIL*/
   background: mediumaquamarine;
@@ -105,7 +120,7 @@ export const MenuLink = styled(Link)`
 `;
 
 
-// yukarida olusturdugumuz MenuLink den de Logo yu turetiyoruz.aynisi olsun sadece sunlari degistir diyecegiz
+// yukarida olusturdugumuz MenuLink den de Logo yu turetiyoruz.aynisi olsun sadece sunlari degistir diyecegiz.
 export const Logo = styled(MenuLink)`
   background: sandybrown;
   padding: 1rem;
